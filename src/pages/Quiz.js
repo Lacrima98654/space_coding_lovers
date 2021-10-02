@@ -28,7 +28,7 @@ class Quiz extends React.Component{
     constructor(){
         super();
         this.state = {
-          seconde:5,
+          seconde:30,
           progress: localStorage.getItem('progress')?localStorage.getItem('progress'):0,
           possible: [...shuffle(data[localStorage.getItem('progress')?localStorage.getItem('progress'):0].possible)],
           redirection : false,
@@ -69,7 +69,7 @@ class Quiz extends React.Component{
               setTimeout(() => {
                  this.setState({redirection:true});
               }, 1000);
-              
+
               this.setState({statut:2});
             }
           },10);

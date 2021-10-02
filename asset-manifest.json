@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/space_coding_lovers/static/css/main.7d11641f.chunk.css",
-    "main.js": "/space_coding_lovers/static/js/main.012c5729.chunk.js",
-    "main.js.map": "/space_coding_lovers/static/js/main.012c5729.chunk.js.map",
+    "main.css": "/space_coding_lovers/static/css/main.3de2b839.chunk.css",
+    "main.js": "/space_coding_lovers/static/js/main.dd1665f3.chunk.js",
+    "main.js.map": "/space_coding_lovers/static/js/main.dd1665f3.chunk.js.map",
     "runtime-main.js": "/space_coding_lovers/static/js/runtime-main.303ec8be.js",
     "runtime-main.js.map": "/space_coding_lovers/static/js/runtime-main.303ec8be.js.map",
-    "static/js/2.bbede565.chunk.js": "/space_coding_lovers/static/js/2.bbede565.chunk.js",
-    "static/js/2.bbede565.chunk.js.map": "/space_coding_lovers/static/js/2.bbede565.chunk.js.map",
+    "static/css/2.f2512455.chunk.css": "/space_coding_lovers/static/css/2.f2512455.chunk.css",
+    "static/js/2.63654822.chunk.js": "/space_coding_lovers/static/js/2.63654822.chunk.js",
+    "static/js/2.63654822.chunk.js.map": "/space_coding_lovers/static/js/2.63654822.chunk.js.map",
     "index.html": "/space_coding_lovers/index.html",
-    "static/css/main.7d11641f.chunk.css.map": "/space_coding_lovers/static/css/main.7d11641f.chunk.css.map",
-    "static/js/2.bbede565.chunk.js.LICENSE.txt": "/space_coding_lovers/static/js/2.bbede565.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/space_coding_lovers/static/media/bg1.cf784b37.jpg",
-    "static/media/fusee.6c536cd7.png": "/space_coding_lovers/static/media/fusee.6c536cd7.png"
+    "static/css/2.f2512455.chunk.css.map": "/space_coding_lovers/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.3de2b839.chunk.css.map": "/space_coding_lovers/static/css/main.3de2b839.chunk.css.map",
+    "static/js/2.63654822.chunk.js.LICENSE.txt": "/space_coding_lovers/static/js/2.63654822.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/space_coding_lovers/static/media/bg3.be27c012.jpg",
+    "static/media/fusee.min.15368194.png": "/space_coding_lovers/static/media/fusee.min.15368194.png"
   },
   "entrypoints": [
     "static/js/runtime-main.303ec8be.js",
-    "static/js/2.bbede565.chunk.js",
-    "static/css/main.7d11641f.chunk.css",
-    "static/js/main.012c5729.chunk.js"
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.63654822.chunk.js",
+    "static/css/main.3de2b839.chunk.css",
+    "static/js/main.dd1665f3.chunk.js"
   ]
 }

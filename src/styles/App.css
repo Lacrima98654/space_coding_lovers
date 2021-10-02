@@ -35,6 +35,14 @@
     border-radius: 15px;
     width: 0%;
 }
+/*Menu page CSS*/
+.menu{
+    height: 100vh;
+}
+
+div.btn{
+    margin-bottom:;
+}
 
 /*Quiz page CSS*/
 .pageQuiz{

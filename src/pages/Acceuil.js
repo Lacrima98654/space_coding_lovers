@@ -7,7 +7,7 @@ class Acceuil extends React.Component{
         this.state = {
             count : 0
         }
-        this.wait = 10;
+        this.wait = 10;//Temps de chargement du jeu en secondes
     }
     componentDidMount() {
         const f = document.getElementById('progressBarFull');
@@ -20,19 +20,18 @@ class Acceuil extends React.Component{
     }
     
     render() {
-        if(this.state.count >= this.wait)
-            clearInterval(this.timeID)
-        return (
+        //Supprimer le compteur de temps
+        if(this.state.count >= this.wait) clearInterval(this.timeID);
+        
+        return(
             <div className="acceuil">
-            {this.state.count >= this.wait ? <Redirect to="/menu" />:null}
-                <div id="progressBar">
-                    <div id="progressBarFull">
-
-                    </div>
-                </div>
+                {this.state.count >= this.wait ? <Redirect to="/space_coding_lovers/menu" />:null}
                 <p id="welcome">
                     WELCOME ON SPACE QUEST GAME
                 </p>
+                <div id="progressBar">
+                    <div id="progressBarFull"/>
+                </div>
             </div>
         )
     }

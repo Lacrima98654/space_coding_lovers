@@ -3,6 +3,7 @@ import Acceuil from './pages/Acceuil';
 import Menu from './pages/Menu';
 import Puzzle from './pages/Puzzle';
 import Details from './pages/Details';
+import Error from './pages/error';
 import { Route,Switch} from 'react-router-dom';
 import './styles/App.css';
 import Quiz from './pages/Quiz';
@@ -18,6 +19,7 @@ class App extends React.Component{
           <Route path='/space_coding_lovers/quiz' component={Quiz}/>
           <Route path='/space_coding_lovers/puzzle' component={Puzzle}/>
           <Route path='/space_coding_lovers/details/:quiz' component={Details}/>
+          <Route component={Error}/>
         </Switch>
       </React.Fragment>
       

@@ -4,7 +4,7 @@ import fusee from '../fusee.min.png'
 import data from './ressource';
 
 const Status = ({type}) =>{
-  let res = type===1?"Good answers":type===0?"Bad answers":"Time Out";
+  let res = type===1?"Good answer":type===0?"Bad answer":"Time Out";
   let alert = type===1?"alert-success":"alert-danger";
   return(
     <React.Fragment>
@@ -48,7 +48,16 @@ class Quiz extends React.Component{
 
     handleClick(e)
     {
-      this.setState({redirection:true});
+      if(this.state.statut === null){
+        let click = e.target.innerHTML.slice(5);
+        if(click === data[this.state.progress].answer)
+          this.setState({statut:1});
+        else
+          this.setState({statut:0});
+        setTimeout(() => {
+                  this.setState({redirection:true});
+                }, 1500);
+      }
     }
     render(){
         if(!this.state.seconde) {
@@ -66,11 +75,14 @@ class Quiz extends React.Component{
               clearInterval(this.timerID);
               
               //Gestion de la redirection
+              if(this.state.statut === null){
               setTimeout(() => {
                  this.setState({redirection:true});
-              }, 1000);
+              }, 1500);
 
+              //Afficher que le temps est passé mais il faut vérifier
               this.setState({statut:2});
+            }
             }
           },10);
         }
@@ -93,6 +105,7 @@ class Quiz extends React.Component{
                     <p className='quiz'>
                       Question<br/>
                       {data[this.state.progress].question}
+                      <br/><br/>
                     </p>
                     </td>
                 </tr>

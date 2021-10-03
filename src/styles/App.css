@@ -38,10 +38,15 @@
 /*Menu page CSS*/
 .menu{
     height: 100vh;
+    justify-content: center;
+    text-align: center;
+}
+.menu div{
+    padding: 10px;;
 }
 
-div.btn{
-    margin-bottom:;
+.menu a{
+    text-decoration: none;
 }
 
 /*Quiz page CSS*/
@@ -74,6 +79,7 @@ td{
     background-color: rebeccapurple;
     color: white;
     border-radius: 5px;
+    cursor:pointer;
 }
 
 .time-out{
